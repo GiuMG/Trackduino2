@@ -9,4 +9,5 @@ Trackduino2 can be easily plugged into the MOS 6522 VIA Chip socket of the 1541 
 # How it works 
 Once the Drive is powered on, the Arduino waits for the Track information given from the read/write head, until then the Trackposition is still unknown and the Display stays on stand-by.
 
-
+@ asder
+## asdad
