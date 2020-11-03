@@ -27,7 +27,7 @@ The data that follows is then read the get the change of track by reading the da
 - 20-30cm 4 pole jumper wire female-female
 - 40pin DIL Socket (optional)
 
- * 'Necessary Software:
+ ### ![Screenshot](/docs/Trackduino_Led.jpg)Necessary Software:
 - Arduino IDE 1.8 or later versions  https://www.arduino.cc/en/software
 - Arduino Libraries: (downloadable from Arduino IDE)
 - DigitalWriteFast 
@@ -53,3 +53,5 @@ Put the whole adapter into the 6522 socket of you 1541 (UC2) or 1541-II (U8) Dri
 After power on and init, the Display will now show 2 horizontal lines which means it is in stand-by waiting for data. 
 Insert a Floppy Disk and call the directory on your C64. You should be able to see the spinning animation and the track number 18. For now on it will display each track read by the head.
 You're done ! 
+
+![Screenshot](/docs/Trackduino_Led.jpg)
