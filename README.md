@@ -54,12 +54,15 @@ You can now check if the Arduino works correcty just plugging in a mini-USB B ca
 ## Final Installation 
 Put the whole adapter into the 6522 socket of you 1541 (UC2) or 1541-II (U8) Drive and turn it on. 
 After power on init, the Display will now show 2 horizontal lines which means it is waiting for data being read. 
+
 ![98009658-17991200-1df6-11eb-8337-33479454991c](https://user-images.githubusercontent.com/64856480/98013033-1d90f200-1dfa-11eb-97a5-e3a092267207.jpeg)
+
 Insert a Floppy Disk and call the directory on your C64. You should be able to see the spinning animation and the track number 18.
 
 ![98008239-97be7800-1df4-11eb-98c0-5ccf88a54802](https://user-images.githubusercontent.com/64856480/98013334-8c6e4b00-1dfa-11eb-92a4-ed97252fff36.jpeg)
 
 For now on it will display each track read by the head.
 You're done ! 
+
 ![98009782-3bf4ee80-1df6-11eb-8d7c-7a40bb7fe68c](https://user-images.githubusercontent.com/64856480/98013479-b58edb80-1dfa-11eb-82e4-7d77e72bb940.jpeg)
 
