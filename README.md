@@ -37,4 +37,4 @@ Necessary Software:
    -------------
   ## Assembling the whole stuff
    Just program the Trackduino Sketch into the Arduino Nano and solder it on the adapter PCB using the strip line headers included. 
-   Cut the turned 40pin strip line in two 20pin strips and solder them on the bottom side of the adapter. Once done, solder the socket (but you can directly mount the MOS6522 chip on it) on the upper side of the adapter board and the 4 pole header for the display. 
+   Cut the turned 40pin strip line in two 20pin strips and solder them on the bottom side of the adapter. Once done, solder the socket (but you can directly mount the MOS6522 chip on it) on the upper side of the adapter board and the 4 pole header for the display. Connect the Jumper wires from the adapter to the Display, following the pins printed on the silkscreen. You can now connect a mini-USB B cable to the Arduino and you shuld be able to see it working correctly, displaying random tracks, since it's not connected to the Drive.
