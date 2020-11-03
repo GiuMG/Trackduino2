@@ -19,7 +19,9 @@ The data that follows is then read the get the change of track by reading the da
 -----
  ### Hardware: (You'll find all these components very cheap on Aliexpress)
 - My Trackduino Adapter PCB (you can find the Gerber files below) 
-![PCB_top](https://user-images.githubusercontent.com/64856480/98011807-a149df00-1df8-11eb-9dde-c8ac4d79aaff.png)
+
+![PCB_top](https://user-images.githubusercontent.com/64856480/98012360-4e245c00-1df9-11eb-9fa1-3ad68a7e970b.png)
+
 - Arduino Nano 
 - TM1637 4 digit LED Display 
 - 16x2 LCD Display (for LCD version) 
