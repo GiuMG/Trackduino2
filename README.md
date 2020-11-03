@@ -19,6 +19,7 @@ The data that follows is then read the get the change of track by reading the da
 -----
  ### Hardware: (You'll find all these components very cheap on Aliexpress)
 - My Trackduino Adapter PCB (you can find the Gerber files below) 
+![PCB_top](https://user-images.githubusercontent.com/64856480/98011807-a149df00-1df8-11eb-9dde-c8ac4d79aaff.png)
 - Arduino Nano 
 - TM1637 4 digit LED Display 
 - 16x2 LCD Display (for LCD version) 
@@ -39,20 +40,18 @@ The data that follows is then read the get the change of track by reading the da
 ## Assembling the whole stuff
 Just program the Trackduino Sketch into the Arduino Nano and solder it on the adapter PCB using the strip line headers included. 
 Use the following Sketches:  
-"Track_anzeige_05_lcd" for LCD mode, "Track_anzeige_o4_poll" for LED display mode and "Track_anzeige_04_poll_Nano3" only for Arduino Nano3 versions(Atmega168) 
-    and only with LED display mode. 
+"Track_anzeige_05_lcd" for LCD mode, "Track_anzeige_04_poll" for LED display mode and "Track_anzeige_04_poll_Nano3" only for Arduino Nano3 versions(Atmega168) 
+    and only with LED display. 
 Cut the turned 40pin strip line in two 20pin strips and solder them on the bottom side of the adapter. Once done, solder the socket (but you can directly mount the MOS6522 chip on it) on the upper side of the adapter board and the 4 pole header for the display. Connect the Jumper wires from the adapter to the Display, following the pin signals printed on the silkscreen.
-![Adapter](https://user-images.githubusercontent.com/64856480/98008600-f4219780-1df4-11eb-9be8-7fa589d5fcc9.JPG)
+
+![Trackduino_Led](https://user-images.githubusercontent.com/64856480/98007882-372f3b00-1df4-11eb-935e-172dbc5e25f2.JPG)
 
 You can now check if the Arduino works correcty just plugging in a mini-USB B cable. The display will initializze and short after showing random tracks, since it's not connected to the Drive, but this is ok, it means it does work properly. 
-
-![Trackduino_Lcd](https://user-images.githubusercontent.com/64856480/98007990-51691900-1df4-11eb-88ca-29a90efce293.JPG)
-![Trackduino_Led](https://user-images.githubusercontent.com/64856480/98007882-372f3b00-1df4-11eb-935e-172dbc5e25f2.JPG)
 
 -----
 ## Final Installation 
 Put the whole adapter into the 6522 socket of you 1541 (UC2) or 1541-II (U8) Drive and turn it on. 
-After power on and init, the Display will now show 2 horizontal lines which means it is in stand-by waiting for data. 
+After power on init, the Display will now show 2 horizontal lines which means it is waiting for data being read. 
 ![IMG_1308](https://user-images.githubusercontent.com/64856480/98009658-17991200-1df6-11eb-8337-33479454991c.JPG)
 Insert a Floppy Disk and call the directory on your C64. You should be able to see the spinning animation and the track number 18.
 
