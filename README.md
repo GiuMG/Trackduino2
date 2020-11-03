@@ -9,8 +9,8 @@ Trackduino is Trackdisplay reader for Commodore 1541 Drives. It's based on an or
 - Trackduino2 can be easily plugged into the MOS 6522 VIA Chip socket of the 1541 mainboard without any other internal connections, since it already includes the Arduino Nano, acting as an 6522 adapter board. 
 - It can be easily removed to get back the Drives stock condition. 
 
+----------
 ## How it works 
---------------
 When the Drive is powered on, the Arduino resets and waits for the Track information given from the read/write head, until then the Track number is still unknown and the Display stays on stand-by.
 Once the head reads data from the current track of the inserted disc, the Arduino peeks information from the 6522 VIA chip. Each track contains some data sectors, and each sector has an sector-header. The sector-header contains information about the current track and sector number, which is then driven to the display. 
 The data that follows is then read the get the change of track by reading the data for the stepper motor.
@@ -36,7 +36,7 @@ The data that follows is then read the get the change of track by reading the da
    - LiquidCrystal_I2C 
    -------------
   ## Assembling the whole stuff
-  ------------------
+  
    Just program the Trackduino Sketch into the Arduino Nano and solder it on the adapter PCB using the strip line headers included. 
    Use the following Sketches:  
       "Track_anzeige_05_lcd" for LCD mode, "Track_anzeige_o4_poll" for LED display mode and "Track_anzeige_04_poll_Nano3" only for Arduino Nano3 versions(Atmega168) and only with LED display mode. 
