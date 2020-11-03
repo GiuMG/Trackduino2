@@ -16,11 +16,25 @@ Once the head reads data from the current track of the inserted disc, the Arduin
 The data that follows is then read the get the change of track by reading the data for the stepper motor.
 ## What do you need  
 -------------------
+ Hardware: (You'll find all these components very cheap on Aliexpress)
 - My Trackduino Adapter PCB (you can find the Gerber files below) 
-- Arduino Nano (very cheap on Aliexpress)
-- TM1637 4 digit LED Display
+- Arduino Nano 
+- TM1637 4 digit LED Display 
 - 16x2 LCD Display (for LCD version) 
 - I2C LCD module (only for LCD version)
 - 1x 40pin Turned Pinheader SIL Strip
 - 20-30cm 4 pole jumper wire female-female
 - 40pin DIL Socket (optional)
+
+-----
+Necessary Software:
+- Arduino IDE 1.8 or later versions  https://www.arduino.cc/en/software
+- Arduino Libraries: (downloadable from Arduino IDE)
+   - DigitalWriteFast 
+   - TimerOne
+   - TM1637
+   - LiquidCrystal_I2C 
+   -------------
+  ## Assembling the whole stuff
+   Just program the Trackduino Sketch into the Arduino Nano and solder it on the adapter PCB using the strip line headers included. 
+   Cut the turned 40pin strip line in two 20pin strips and solder them on the bottom side of the adapter. Once done, solder the socket (but you can directly mount the MOS6522 chip on it) on the upper side of the adapter board and the 4 pole header for the display. 
