@@ -16,7 +16,7 @@ Once the head reads data from the current track of the inserted disc, the Arduin
 The data that follows is then read the get the change of track by reading the data for the stepper motor.
 ## What do you need  
 -------------------
- Hardware: (You'll find all these components very cheap on Aliexpress)
+ ### Hardware: (You'll find all these components very cheap on Aliexpress)
 - My Trackduino Adapter PCB (you can find the Gerber files below) 
 - Arduino Nano 
 - TM1637 4 digit LED Display 
@@ -27,7 +27,7 @@ The data that follows is then read the get the change of track by reading the da
 - 40pin DIL Socket (optional)
 
 -----
-Necessary Software:
+### Necessary Software:
 - Arduino IDE 1.8 or later versions  https://www.arduino.cc/en/software
 - Arduino Libraries: (downloadable from Arduino IDE)
    - DigitalWriteFast 
@@ -36,8 +36,12 @@ Necessary Software:
    - LiquidCrystal_I2C 
    -------------
   ## Assembling the whole stuff
+  ------------------
    Just program the Trackduino Sketch into the Arduino Nano and solder it on the adapter PCB using the strip line headers included. 
    Use the following Sketches:  
       "Track_anzeige_05_lcd" for LCD mode, "Track_anzeige_o4_poll" for LED display mode and "Track_anzeige_04_poll_Nano3" only for Arduino Nano3 versions(Atmega168) and only with LED display mode. 
       
-Cut the turned 40pin strip line in two 20pin strips and solder them on the bottom side of the adapter. Once done, solder the socket (but you can directly mount the MOS6522 chip on it) on the upper side of the adapter board and the 4 pole header for the display. Connect the Jumper wires from the adapter to the Display, following the pins printed on the silkscreen. You can now connect a mini-USB B cable to the Arduino and you shuld be able to see it working correctly, displaying random tracks, since it's not connected to the Drive.
+Cut the turned 40pin strip line in two 20pin strips and solder them on the bottom side of the adapter. Once done, solder the socket (but you can directly mount the MOS6522 chip on it) on the upper side of the adapter board and the 4 pole header for the display. Connect the Jumper wires from the adapter to the Display, following the pins printed on the silkscreen. You can now connect a mini-USB B cable to the Arduino and you shuld be able to see it working correctly, displaying random tracks, since it's not connected to the Drive, but it's the way it works correctly.
+Put the whole adapter into the 6522 socket of you 1541 (U  ) or 1541-II (U  ) Drive and turn it on. 
+After initialization, the Display will shoy two horizontal lines, it means it's on stand-by. 
+Insert a Floppy Disk and call directory. You'll see the spinning animation and the track number on 18. You're done ! 
