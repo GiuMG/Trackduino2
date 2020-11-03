@@ -27,7 +27,7 @@ The data that follows is then read the get the change of track by reading the da
 - 20-30cm 4 pole jumper wire female-female
 - 40pin DIL Socket (optional)
 
- * Necessary Software:
+ * 'Necessary Software:
 - Arduino IDE 1.8 or later versions  https://www.arduino.cc/en/software
 - Arduino Libraries: (downloadable from Arduino IDE)
 - DigitalWriteFast 
@@ -43,7 +43,7 @@ Use the following Sketches:
     and only with LED display mode. 
 Cut the turned 40pin strip line in two 20pin strips and solder them on the bottom side of the adapter. Once done, solder the socket (but you can directly mount the MOS6522 chip on it) on the upper side of the adapter board and the 4 pole header for the display. Connect the Jumper wires from the adapter to the Display, following the pin signals printed on the silkscreen. You can now check if the Arduino works correcty just plugging in a mini-USB B cable. The display will initializze and short after showing random tracks, since it's not connected to the Drive, but this is ok, it means it does work properly. 
 
-![Screenshot](/docs/Trackduino_Led.jpg)
+![Screenshot](/Trackduino2/docs/Trackduino_Led.jpg)
 
 ![Screenshot](/docs/Trackduino_Lcd.jpg)
 
