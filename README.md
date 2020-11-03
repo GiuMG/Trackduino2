@@ -27,7 +27,7 @@ The data that follows is then read the get the change of track by reading the da
 - 20-30cm 4 pole jumper wire female-female
 - 40pin DIL Socket (optional)
 
- ### ![Screenshot](/docs/Trackduino_Led.jpg)Necessary Software:
+ ### Necessary Software:
 - Arduino IDE 1.8 or later versions  https://www.arduino.cc/en/software
 - Arduino Libraries: (downloadable from Arduino IDE)
 - DigitalWriteFast 
@@ -45,7 +45,7 @@ Cut the turned 40pin strip line in two 20pin strips and solder them on the botto
 
 ![Screenshot](/Trackduino2/docs/Trackduino_Led.jpg)
 
-![Screenshot](/docs/Trackduino_Lcd.jpg)
+https://github.com/GiuMG/Trackduino2/blob/main/Docs/Trackduino_Lcd.JPG
 
 -----
 ## Final Installation 
@@ -54,4 +54,4 @@ After power on and init, the Display will now show 2 horizontal lines which mean
 Insert a Floppy Disk and call the directory on your C64. You should be able to see the spinning animation and the track number 18. For now on it will display each track read by the head.
 You're done ! 
 
-![Screenshot](/docs/Trackduino_Led.jpg)
+
