@@ -41,15 +41,24 @@ Just program the Trackduino Sketch into the Arduino Nano and solder it on the ad
 Use the following Sketches:  
 "Track_anzeige_05_lcd" for LCD mode, "Track_anzeige_o4_poll" for LED display mode and "Track_anzeige_04_poll_Nano3" only for Arduino Nano3 versions(Atmega168) 
     and only with LED display mode. 
-Cut the turned 40pin strip line in two 20pin strips and solder them on the bottom side of the adapter. Once done, solder the socket (but you can directly mount the MOS6522 chip on it) on the upper side of the adapter board and the 4 pole header for the display. Connect the Jumper wires from the adapter to the Display, following the pin signals printed on the silkscreen. You can now check if the Arduino works correcty just plugging in a mini-USB B cable. The display will initializze and short after showing random tracks, since it's not connected to the Drive, but this is ok, it means it does work properly. 
+Cut the turned 40pin strip line in two 20pin strips and solder them on the bottom side of the adapter. Once done, solder the socket (but you can directly mount the MOS6522 chip on it) on the upper side of the adapter board and the 4 pole header for the display. Connect the Jumper wires from the adapter to the Display, following the pin signals printed on the silkscreen.
+![Adapter](https://user-images.githubusercontent.com/64856480/98008600-f4219780-1df4-11eb-9be8-7fa589d5fcc9.JPG)
 
+You can now check if the Arduino works correcty just plugging in a mini-USB B cable. The display will initializze and short after showing random tracks, since it's not connected to the Drive, but this is ok, it means it does work properly. 
 
+![Trackduino_Lcd](https://user-images.githubusercontent.com/64856480/98007990-51691900-1df4-11eb-88ca-29a90efce293.JPG)
+![Trackduino_Led](https://user-images.githubusercontent.com/64856480/98007882-372f3b00-1df4-11eb-935e-172dbc5e25f2.JPG)
 
 -----
 ## Final Installation 
 Put the whole adapter into the 6522 socket of you 1541 (UC2) or 1541-II (U8) Drive and turn it on. 
+
 After power on and init, the Display will now show 2 horizontal lines which means it is in stand-by waiting for data. 
-Insert a Floppy Disk and call the directory on your C64. You should be able to see the spinning animation and the track number 18. For now on it will display each track read by the head.
+Insert a Floppy Disk and call the directory on your C64. You should be able to see the spinning animation and the track number 18. 
+
+![Install_1541](https://user-images.githubusercontent.com/64856480/98008239-97be7800-1df4-11eb-98c0-5ccf88a54802.JPG)
+
+For now on it will display each track read by the head.
 You're done ! 
 
 
