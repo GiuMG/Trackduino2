@@ -1,7 +1,7 @@
 ------
 # Trackduino2
 Trackduino is Trackdisplay reader for Commodore 1541 Drives. It's based on an original project from oe7twj (don't know his real name) 
-------
+-------
 ## What does it do ? 
  - It is able ro read the Track position of the read/write head and display it on a 4 digit LED Display along with the motor rotation animation and the half track indication.
 - It also works as an I2C slave device sending the current track to an external device.
